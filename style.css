@@ -1,0 +1,310 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #191B1A;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #fc3565;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none;
+  /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: .05rem solid #fff;
+  margin-top: -50px;
+}
+
+/*
+span {
+  color: #191B1A;
+}
+*/
+
+
+h1 {
+  font-weight: bolder;
+}
+
+.alex-srs {
+  font-size: 6.5rem;
+}
+
+/*
+ * Base structure
+ */
+
+body {
+  font-family: 'VT323';
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  overflow: hidden;
+  /* background: #191B1A; */
+  /* background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); */
+  /*
+  background: rgb(66,18,14);
+  background: linear-gradient(90deg, rgba(66,18,14,1) 0%, rgba(38,97,119,1) 100%); 
+  */
+  background: rgb(131, 58, 180);
+  background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+}
+
+#particles-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cover-container {
+  margin: 5.5%;
+}
+
+.lh-100 {
+  line-height: 1;
+}
+
+.lh-125 {
+  line-height: 1.25;
+}
+
+.lh-150 {
+  line-height: 1.5;
+}
+
+.rectangle-bg {
+  background: #fff;
+  opacity: 30;
+  color: #191B1A;
+}
+
+
+/*
+ * Header
+ */
+.masthead {
+  margin-bottom: 2rem;
+}
+
+.masthead-brand {
+  margin-bottom: 0;
+}
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, .5);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link+.nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+.mb-auto,
+.my-auto {
+  margin-bottom: 50px !important;
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+
+  .nav-masthead {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+.cover {
+  padding: 0 1.5rem;
+}
+
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+
+
+/*
+ * Progress Bar
+ */
+
+.avatar {
+  border-radius: 50%;
+  margin-top: -25px;
+  margin: -25px;
+}
+
+.avatar:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+#center {
+  width: 600px;
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  margin-left: -300px;
+  background: rgba(0, 0, 0, 1);
+  border: 2px solid rgba(255, 255, 255, 1);
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.2);
+}
+
+#main {
+  width: 200px;
+  height: 35px;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(90deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+  float: left;
+  animation: stretch 5s infinite linear;
+}
+
+.row {
+  height: 9px;
+  width: 400px;
+  float: left;
+  display: inherit;
+  animation: squeeze 5s infinite linear;
+}
+
+.sq {
+  float: left;
+}
+
+
+@keyframes stretch {
+  0% {
+    width: 200px;
+  }
+
+  25% {
+    width: 280px;
+  }
+
+  50% {
+    width: 360px;
+  }
+
+  75% {
+    width: 240px;
+  }
+
+  100% {
+    width: 200px;
+  }
+}
+
+@keyframes squeeze {
+  0% {
+    width: 400px;
+  }
+
+  25% {
+    width: 320px;
+  }
+
+  50% {
+    width: 140px;
+  }
+
+  75% {
+    width: 360px;
+  }
+
+  100% {
+    width: 400px;
+  }
+}
+
+
+/*
+ * Animation
+ */
+
+.btns:hover,
+.btn:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
