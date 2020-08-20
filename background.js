@@ -69,4 +69,3 @@ var navigate = (event) => {
 }
 var nodes = document.querySelectorAll('.menu-inner>a');
 nodes.forEach((item) => item.addEventListener("click", navigate));
-window.location.href = '#bio';
