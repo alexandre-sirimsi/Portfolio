@@ -35,10 +35,12 @@ span {
 
 h1 {
   font-weight: bolder;
+  align-items: center;
 }
 
 .alex-srs {
   font-size: 6.5rem;
+
 }
 
 /*
@@ -366,3 +368,4 @@ animation-delay: -0.16s;
     transform: translate(1px, -2px) rotate(-1deg);
   }
 }
+
