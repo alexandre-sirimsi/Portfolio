@@ -184,7 +184,7 @@ body {
   width: 600px;
   position: absolute;
   left: 50%;
-  top: 55%;
+  top: 61.5% !important;
   margin-left: -300px;
   background: rgba(0, 0, 0, 1);
   border: 2px solid rgba(255, 255, 255, 1);
@@ -277,8 +277,6 @@ body {
 
 .lead-III {
   font-size: 1.25rem;
-  font-weight: 300;
-  padding-top: 20px;
 }
 
 @keyframes stretch {
@@ -388,11 +386,7 @@ body {
   -webkit-animation: neon2 1s ease-in-out infinite alternate;
   -moz-animation: neon2 1s ease-in-out infinite alternate;
   animation: neon2 1s ease-in-out infinite alternate;
-  font-size: 1.5em;
-}
-
-.Vote {
-  font-size: 3.5rem;
+  font-size: 3.5em;
 }
 
 @-webkit-keyframes neon2 {
